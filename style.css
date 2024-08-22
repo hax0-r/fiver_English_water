@@ -13,3 +13,20 @@ scroll-behavior: smooth;
 --white-color: #f7f7f7;
 }
  
+
+.slidein {
+    animation: slideAnimation 1s ease var(--slidein-delay, 0) forwards;
+  }
+
+
+@keyframes slideAnimation {
+    from {
+      opacity: 0;
+      transform: translateY(10px)
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateY(0)
+    }
+  }
