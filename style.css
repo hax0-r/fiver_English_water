@@ -20,6 +20,7 @@
 .bg-custum-color {
     background-color: #003595;
 }
+
 .text-custum-color {
     color: #003595;
 }
@@ -199,4 +200,22 @@ footer .main .icons i {
     color: var(--white-color);
     font-size: 1.6rem;
     margin-right: 1rem;
+}
+
+@media print {
+    .prientRemove {
+        display: none;
+    }
+
+    #printRemove,.printHidefooter {
+        display: none;
+    }
+
+    .FeaturedResult {
+        width: 6.8rem;
+    }
+
+    .printBlock {
+        display: block;
+    }
 }
