@@ -17,20 +17,6 @@
     <h1 class="bg-custum-color text-white p-4 sm:text-2xl text-lg text-center sm:text-start font-medium">WaterSafe
         Approved
         Contractors</h1>
-    <style>
-        .bg-custum-color {
-            background-color: #003595;
-        }
-        .text-custum-color {
-            color: #003595;
-        }
-
-        .shade {
-            /* -webkit-box-shadow: 0px 0px 7px 5px rgba(186, 186, 186, 0.722);
-            -moz-box-shadow: 0px 0px 7px 5px rgba(186, 186, 186, 1); */
-            box-shadow: 0px 0px 7px 5px rgba(186, 186, 186, 0.341);
-        }
-    </style>
 
     <div class="max-w-[75rem] mx-auto m-6 mt-10">
         <div class="flex justify-between items-center mx-2">
@@ -44,9 +30,14 @@
         </div>
         <div class="mt-6 p-2 ">
             <div
-                class="border-[1.5px] slidein shade [--slidein-delay:300ms] opacity-0 border-zinc-200 justify-center items-start p-3 mb-5 rounded-xl flex gap-10 flex-wrap">
+                class="border-[1.5px] slidein shade [--slidein-delay:300ms] opacity-0 border-zinc-200 sm:justify-center items-start p-3 pt-4 mb-5 rounded-xl flex sm:gap-10 gap-6 flex-wrap">
                 <div class="mt-2">
-                    <h2 class="text-2xl Signika font-semibold text-custum-color">United Water</h2>
+                    <div class="flex justify-between items-center gap-5 w-[20rem]">
+                        <h2 class="text-2xl Signika font-semibold text-custum-color">United Water</h2>
+                        <button
+                        class="bg-custum-color text-white p-2 px-3 text-sm rounded-lg hover:bg-blue-800 transition-all sm:hidden">Further
+                        Details</button>
+                    </div>
                     <div class="mt-1 mb-4">
                         4.9
                         <i class="fa-solid fa-star text-yellow-400 ml-2"></i>
@@ -55,31 +46,31 @@
                         <i class="fa-solid fa-star text-yellow-400"></i>
                         <i class="fa-solid fa-star text-yellow-400"></i>
                     </div>
-                    <div class="flex gap-6 items-center">
-                        <div class="text-zinc-500">
+                    <div class="sm:flex gap-6 items-center ">
+                        <div class="text-[#444444]">
                             <p class="pb-[2px]">1 Mayfair Place</p>
                             <p class="pb-[2px]">London</p>
                             <p class="pb-[2px]">W1J 8AJ</p>
                         </div>
-                        <img src="./Docs/Assets/unitedWater.png" class="h-8 " alt="">
+                        <img src="./Docs/Assets/unitedWater.png" class="h-8 mt-5 mb-8 sm:mt-0 sm:mb-0" alt="">
                     </div>
                     <h2 class=" font-medium mt-4 text-zinc-800">Approved By</h2>
                     <img src="./Docs/Assets/logo1.png" class="h-6 mt-3" alt="">
                     <img src="./Docs/Assets/logo2.png" class="h-8 mt-4" alt="">
                 </div>
-                <div class="mt-2">
-                    <p class="font-medium text-zinc-700 mb-4">Please note, this company operates nationally</p>
-                    <a href="#" class="text-zinc-500"> <i class="w-6 my-[6.5px] fa-solid fa-phone "></i> 0800 999
+                <div class="sm:mt-2">
+                    <p class="font-medium text-[#444444] mb-4">Please note, this company operates nationally</p>
+                    <a href="#" class="text-[#444444]"> <i class="w-6 my-[6.5px] fa-solid fa-phone text-zinc-500"></i> 0800 999
                         1027</a><br>
                     <a href="mailto:hello@unitedwater.co.uk"
-                        class="text-blue-800  hover:text-blue-600 transition-all"><i
+                        class="text-custum-color  hover:text-blue-600 transition-all"><i
                             class="w-6 my-[7.5px] mt-[5px] fa-solid fa-envelope text-zinc-500"></i>
                         hello@unitedwater.co.uk</a><br>
-                    <a href="#" class="text-blue-800  hover:text-blue-600 transition-all"><i
+                    <a href="#" class="text-custum-color  hover:text-blue-600 transition-all"><i
                             class="w-6 my-[7.5px] fa-solid fa-cloud text-zinc-500"></i> View Website</a>
                     <h2 class=" font-medium mt-5 mb-2 text-zinc-800">Insurance details</h2>
                     <div class="relative overflow-x-auto max-w-sm w-full">
-                        <table class="text-sm text-left rtl:text-right text-gray-500 max-w-[20rem] w-full">
+                        <table class="text-sm text-left rtl:text-right text-[#444444] max-w-[20rem] w-full">
                             <thead class="text-xs text-gray-700 uppercase bg-zinc-200 ">
                                 <tr class="">
                                     <th scope="col" class="px-6 py-3 border-r border-zinc-300">
@@ -92,8 +83,7 @@
                             </thead>
                             <tbody>
                                 <tr class="bg-white border">
-                                    <th scope="row"
-                                        class="px-6 py-4 font-medium whitespace-nowrap border">
+                                    <th scope="row" class="px-6 py-4 font-medium whitespace-nowrap border">
                                         Zurich
                                     </th>
                                     <td class="px-6 py-4">
@@ -109,12 +99,12 @@
                     <div class="flex justify-between items-center sm:w-[25rem] w-[18rem]">
                         <p class="text-green-600 font-medium"><i class="fa-solid fa-check mr-1"></i>24hr service</p>
                         <button
-                            class="bg-custum-color text-white p-3 px-5 rounded-lg hover:bg-blue-800 transition-all">Further
+                            class="bg-custum-color hidden sm:block text-white p-2 px-3 text-sm rounded-lg hover:bg-blue-800 transition-all">Further
                             Details</button>
                     </div>
                     <p class="font-medium text-zinc-700 mb-4 mt-5">Average customer rating</p>
                     <div class="flex justify-between items-center border-b-2 pb-2">
-                        <p class="text-zinc-500">Quality of work</p>
+                        <p class="text-[#444444]">Quality of work</p>
                         <div class="">
                             <i class="fa-solid fa-star text-yellow-400"></i>
                             <i class="fa-solid fa-star text-yellow-400"></i>
@@ -124,7 +114,7 @@
                         </div>
                     </div>
                     <div class="flex justify-between items-center border-b-2 pb-2 mt-4">
-                        <p class="text-zinc-500">Speed of response</p>
+                        <p class="text-[#444444]">Speed of response</p>
                         <div class="">
                             <i class="fa-solid fa-star text-yellow-400"></i>
                             <i class="fa-solid fa-star text-yellow-400"></i>
@@ -134,7 +124,7 @@
                         </div>
                     </div>
                     <div class="flex justify-between items-center border-b-2 pb-2 mt-4">
-                        <p class="text-zinc-500">Customer services</p>
+                        <p class="text-[#444444]">Customer services</p>
                         <div class="">
                             <i class="fa-solid fa-star text-yellow-400"></i>
                             <i class="fa-solid fa-star text-yellow-400"></i>
@@ -144,19 +134,20 @@
                         </div>
                     </div>
                     <p class="font-medium text-zinc-700 mb-1 mt-5">Services</p>
-                    <p class="text-zinc-500 pb-[2px]">Leak Detection</p>
-                    <p class="text-zinc-500 pb-[2px]">Underground pipework</p>
-                    <p class="text-zinc-500">Moling</p>
-                    <p class="flex justify-end text-zinc-500 text-sm">Featured Result</p>
+                    <p class="text-[#444444] pb-[2px]">Leak Detection</p>
+                    <p class="text-[#444444] pb-[2px]">Underground pipework</p>
+                    <p class="text-[#444444]">Moling</p>
+                    <p class="flex justify-end text-[#444444] text-sm">Featured Result</p>
                 </div>
             </div>
 
 
 
-            <div
+            <!-- <div
                 class="border-[1.5px] slidein [--slidein-delay:500ms] opacity-0 border-zinc-200 justify-center items-start p-3 mb-5 rounded-xl flex gap-10 flex-wrap">
                 <div class="mt-2">
-                    <h2 class="text-2xl Signika font-semibold w-[19rem] text-custum-color">Absolute Leak Detection Ltd</h2>
+                    <h2 class="text-2xl Signika font-semibold w-[19rem] text-custum-color">Absolute Leak Detection Ltd
+                    </h2>
                     <div class="mt-1 mb-4">
                         4.9
                         <i class="fa-solid fa-star text-yellow-400 ml-2"></i>
@@ -207,8 +198,7 @@
                             </thead>
                             <tbody>
                                 <tr class="bg-white border">
-                                    <th scope="row"
-                                        class="px-6 py-4 font-medium whitespace-nowrap border">
+                                    <th scope="row" class="px-6 py-4 font-medium whitespace-nowrap border">
                                         Zurich
                                     </th>
                                     <td class="px-6 py-4">
@@ -319,8 +309,7 @@
                             </thead>
                             <tbody>
                                 <tr class="bg-white border">
-                                    <th scope="row"
-                                        class="px-6 py-4 font-medium whitespace-nowrap border">
+                                    <th scope="row" class="px-6 py-4 font-medium whitespace-nowrap border">
                                         Zurich
                                     </th>
                                     <td class="px-6 py-4">
@@ -376,7 +365,7 @@
                     <p class="text-zinc-500">Moling</p>
                     <p class="flex justify-end text-zinc-500 text-sm">Featured Result</p>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 
