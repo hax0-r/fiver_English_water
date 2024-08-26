@@ -1,0 +1,61 @@
+<!-- 
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <defs>
+      <linearGradient id="dynamicStar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="50%" style="stop-color:#FFD700;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#C0C0C0;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <path fill="url(#dynamicStar)" d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg> -->
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SVG Dynamic Update</title>
+</head>
+
+<body>
+  <div class="svg-container" data-offset="20"></div>
+  <div class="svg-container" data-offset="90"></div>
+  <div class="svg-container" data-offset="20"></div>
+  <div class="svg-container" data-offset="80"></div>
+  <div class="svg-container" data-offset="100"></div>
+
+  <script>
+    function getSVGWithDynamicGradient(offset, id) {
+      return `
+        <svg xmlns="http://www.w3.org/2000/svg" width="18.5" height="18.5" class="bi bi-star-fill" viewBox="0 0 16 16">
+          <defs>
+            <linearGradient id="${id}" x1="0%" y1="0%" x2="100%">
+              <stop offset="${offset}%" style="stop-color:#facc15;stop-opacity:1" />
+              <stop offset="${offset}%" style="stop-color:#dadce0;stop-opacity:1" />
+            </linearGradient>
+          </defs>
+          <path fill="url(#${id})" d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+        </svg>
+      `;
+    }
+
+    function renderSVG() {
+      const svgContainers = document.querySelectorAll('.svg-container');
+      svgContainers.forEach((container, index) => {
+        const offset = container.getAttribute('data-offset'); // Get the offset from the data-offset attribute
+        const uniqueId = `dynamicStar-${index}`; // Generate a unique ID for each gradient
+        container.innerHTML = getSVGWithDynamicGradient(offset, uniqueId);
+      });
+    }
+
+    renderSVG();
+  </script>
+</body>
+
+</html>
